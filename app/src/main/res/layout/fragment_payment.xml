@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/shipping_details_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/txt_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Shipping Details"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_details">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:hint="Name"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Mobile"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:inputType="phone"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_to_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Email"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:inputType="textEmailAddress"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/shipping_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@id/txt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:text="Shipping Address"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_address">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:orientation="vertical">
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:hint="Address Line 1"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_address1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Address Line 2"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_address2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:inputType="text"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="City"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:inputType="text"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/input_layout_state"
+                                    android:layout_width="0dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:hint="State"
+                                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+
+                                    <com.shopping.item.ui.utils.ListenerEditText
+                                        android:id="@+id/txt_state"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/edit_text_drawable"
+                                        android:drawablePadding="20dp"
+                                        android:inputType="text"
+                                        android:paddingLeft="8dp"
+                                        android:paddingTop="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingBottom="12dp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/input_layout_postal_code"
+                                    android:layout_width="0dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:hint="Postal Code"
+                                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+
+                                    <com.shopping.item.ui.utils.ListenerEditText
+                                        android:id="@+id/txt_postal_code"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/edit_text_drawable"
+                                        android:drawablePadding="20dp"
+                                        android:inputType="text"
+                                        android:paddingLeft="8dp"
+                                        android:paddingTop="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingBottom="12dp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_country"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Country"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:inputType="text"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/payment_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/txt_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:text="Payment Details"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_payment">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/visa" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:hint="Debit Card/ Credit Card"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_card_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="CVC no"
+                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                <com.shopping.item.ui.utils.ListenerEditText
+                                    android:id="@+id/txt_cvc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edit_text_drawable"
+                                    android:drawablePadding="20dp"
+                                    android:inputType="phone"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingBottom="12dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:layout_marginTop="30dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="25dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Total Payment"/>
+
+                            <TextView
+                                android:id="@+id/txt_total_payment"
+                                android:layout_marginTop="30dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="40dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$ 2324"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:id="@+id/payment_success_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorWhite">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/success"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginTop="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="26dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGreen"
+                            android:text="Payment Successful"/>
+                        <TextView
+                            android:layout_marginTop="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:text="Order # 1129384"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_drawable"
+        android:text="Next"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

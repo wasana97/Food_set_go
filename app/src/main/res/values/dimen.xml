@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hangman_image_height">280dp</dimen>
+    <dimen name="textview_width">20dp</dimen>
+    <dimen name="ex_large_text_size">16dp</dimen>
+    <dimen name="default_text_size">12dp</dimen>
+</resources>

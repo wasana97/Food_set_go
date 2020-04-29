@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Online Food Order</string>
+
+    <!-- Fragment Home-->
+    <string name="hint_gender">Select Your Gender</string>
+    <string name="lbl_gender">gender</string>
+    <string name="lbl_type">type</string>
+    <string name="lbl_size">size</string>
+    <string name="hint_type">Select Type</string>
+    <string name="hint_size">Select Your Size</string>
+
+    <!-- ItemPick Bottom Sheet  -->
+    <string name="btn_select">Select</string>
+
+    <string name="lbl_women">Women</string>
+    <string name="lbl_men">Men</string>
+    <string name="lbl_big_kid">Big Kid(7-12 years)</string>
+    <string name="lbl_little_kis">Little Kid(4-7 years)</string>
+    <string name="lbl_toddlers">Toddler(9 month-4 years)</string>
+    <string name="lbl_infants">Infant(0-9 months)</string>
+
+    <string name="lbl_us">US &amp; Canada</string>
+    <string name="lbl_uk">UK</string>
+    <string name="lbl_europe">Europe</string>
+    <string name="lbl_inches">Inches</string>
+    <string name="lbl_cm">Centimeters</string>
+
+    <string name="lbl_powerd_by">Powered by Flicker</string>
+
+
+</resources>

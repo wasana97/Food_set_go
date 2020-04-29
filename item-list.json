@@ -1,0 +1,85 @@
+{
+    "itemList": [
+        {
+            "itemName": "Barcelona Pizza",
+            "itemCode": "Pizza123",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "39.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://www.barcelonaresidencias.com//pics_fotosnoticias/66/pizzaresidenciadeestudiantes.jpg"
+        },
+		{
+            "itemName": "Double Decker Burger",
+            "itemCode": "Pizza124",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "99.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://img5.goodfon.com/wallpaper/nbig/1/3e/gamburger-burger-mcdonald-s-perets.jpg"
+        },
+		{
+            "itemName": "French Fries",
+            "itemCode": "Pizza125",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "9.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/12/29/16/junk-food-istock-zeljkosantrac.jpg"
+        },
+		{
+            "itemName": "Tandorie Pizza",
+            "itemCode": "Pizza125",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "39.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://s1.1zoom.me/big0/178/423394-svetik.jpg"
+        },
+		{
+            "itemName": "Grilled Chicken",
+            "itemCode": "Pizza129",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "49.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://www.wallpaperup.com/uploads/wallpapers/2018/03/23/1239149/1b1dca24781f4d058119fe6feea69b46-700.jpg"
+        },
+		{
+            "itemName": "Grilled Fish",
+            "itemCode": "Pizza129",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "19.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://wallpapermemory.com/uploads/807/fish-food-wallpaper-hd-1600x1024-340083.jpg"
+        },
+		{
+            "itemName": "Vegitable Rice",
+            "itemCode": "Pizza120",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "19.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://www.vegetariantimes.com/.image/t_share/MTQ3MDM3MzQ5NjA2MzM2NDA3/zi3000-shutterstock-buddha-bowl.jpg"
+        },
+		{
+            "itemName": "Chicken Fried Rice",
+            "itemCode": "Pizza120",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "19.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://www.thepost24.com/wp-content/uploads/2019/05/Chicken-Fried-Rice.jpg"
+        },
+		{
+            "itemName": "Pasta",
+            "itemCode": "Pizza120",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "19.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://www.photo-elsoar.com/wp-content/images/Pasta-Pictures-HD-4.jpg"
+        },
+			{
+            "itemName": "Lasagna",
+            "itemCode": "Pizza120",
+            "itemDescription": "Barcelona stands out for its great variety of restaurants: Italian, Indian, Mediterranean food, author, fast-food, slow-food, hamburgers, tapas, vegan food or Argentinian barbecues ... everything has a place in Barcelona. But without a doubt, one of the dishes that you always want is a good pizza. These are our recommendations:",
+            "itemPrice": "19.99",
+            "itemDiscount": "20%",
+            "itemImg": "https://wallpapercave.com/wp/wp3030132.jpg"
+        }
+       
+    ]
+}
